@@ -3,216 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dress Shop</title>
+    <title>Dribbble Clone</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dribble.css">
     <style>
         body {
-            font-family: 'Pacifico', cursive;
             margin: 0;
             padding: 0;
-            background-color: #f9fbe7;
-            color: #4e342e;
+            background-image: url('your-image-url.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color:rgb(133, 239, 76); 
         }
-
-        .navbar {
-            background-color: #6a1b9a;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        .gallery-item {
+            transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
         }
-
-        .navbar-brand, .navbar-nav .nav-link {
-            color: #ffffff !important;
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-
-        .navbar-nav {
-            flex-direction: row;
-        }
-
-        .navbar-nav .nav-link {
-            padding: 0 15px;
-        }
-
-        .nav-item .btn-primary {
-            background-color: #ff80ab;
-            border-color: #ff80ab;
-        }
-
-        .nav-item .btn-primary:hover {
-            background-color: #d500f9;
-            border-color: #d500f9;
-        }
-
-        .header-section h3 {
-            font-weight: bold;
-            color: #6a1b9a;
-        }
-
-        .header-section p {
-            font-size: 1.2em;
-            color: #4e342e;
-        }
-
-        .gallery-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .card {
-            background-color: #ffffff;
-            border: 1px solid #cfd8dc;
-            border-radius: 10px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
         .gallery-img {
             width: 100%;
-            height: 200px;
+            height: 100px;
             object-fit: cover;
-            border-radius: 10px 10px 0 0;
-        }
-
-        .card-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: #6a1b9a;
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        .card-body {
-            padding: 20px;
-            text-align: center;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer {
-            background-color: #6a1b9a;
-            color: #ffffff;
-            text-align: center;
-            padding: 25px;
-            font-size: 0.9em;
-            margin-top: 40px;
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 768px) {
-            .navbar-nav {
-                flex-direction: column;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            .gallery-section {
-                margin-top: 20px;
-            }
-
-            .card-body {
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header-section h3 {
-                font-size: 1.5em;
-            }
-
-            .header-section p {
-                font-size: 1em;
-            }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">ONLINE SHOP</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><h2>Dribbble</h2></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sales</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li>
+               <h2> <li class="nav-item"><a class="nav-link" href="#">Shots</a></li></h2>
+               <h2> <li class="nav-item"><a class="nav-link" href="#">Designers</a></li></h2>
+               <h2> <li class="nav-item"><a class="nav-link" href="#">Teams</a></li></h2>
+               <h2> <li class="nav-item"><a class="nav-link" href="#">Community</a></li></h2>
+               <h2> <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li></h2>
+               <h2> <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li></h2>
             </ul>
         </div>
     </nav>
 
+    
     <div class="container mt-4">
         <div class="text-center mb-4 header-section">
-            <h4>Fashion Forward</h4>
-            <h3>"Style Redefined, Elegance Redressed!"</h3>
-            <p class="lead">"Discover the latest trends and timeless classics in our online shop"</p>
+            <h2>What are you working on?</h2>
+            <p class="lead"><h2>Dribbble is show and tell for designers.</h2></p>
         </div>
 
-        <div class="gallery-section">
-            <div class="card">
-                <img src="project img 1.jpg">
-                <div class="card-body">
-                    <p class="card-title">EVENING DRESS</p>
-                    <small class="text-muted">Versace</small>
+        
+        <div class="row gallery-section">
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 1.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">DRESS</p>
+                        <small class="text-muted">MYNTRA</small>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src=" " class="gallery-img" alt="Casual Dress">
-                <div class="card-body">
-                    <p class="card-title">CASUAL DRESS</p>
-                    <small class="text-muted">H&M</small>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 2.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">MAKEUP KID</p> 
+                        <small class="text-muted">NYKAA FASHION</small>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="formal.jpg" class="gallery-img" alt="Formal Dress">
-                <div class="card-body">
-                    <p class="card-title">FORMAL DRESS</p>
-                    <small class="text-muted">Zara</small>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 3.png" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">BANGLES</p>
+                        <small class="text-muted">SHOPSY</small>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="party wear.jpg" class="gallery-img" alt="Party Wear">
-                <div class="card-body">
-                    <p class="card-title">PARTY WEAR</p>
-                    <small class="text-muted">Gucci</small>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 4.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">NECKLACE</p>
+                        <small class="text-muted">ZARA</small>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="trational image.jpg"gallery-img" alt="Traditional Wear">
-                <div class="card-body">
-                    <p class="card-title">TRADITIONAL WEAR</p>
-                    <small class="text-muted">Fabindia</small>
+            
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 5.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">EARRINGS</p>
+                        <small class="text-muted">AJIO</small>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="summer.jpg" class="gallery-img" alt="Summer Dress">
-                <div class="card-body">
-                    <p class="card-title">SUMMER DRESS</p>
-                    <small class="text-muted">Forever 21</small>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 6.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">PERFUME</p>
+                        <small class="text-muted">PANTALOONS</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 7.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">SKINCARE PRODUCTS</p>
+                        <small class="text-muted">BERRYLUSH</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="project img 8.jpg" class="card-img-top gallery-img">
+                    <div class="card-body text-center">
+                        <p class="card-title">SLIPPERS</p>
+                        <small class="text-muted">PUMA</small>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    
     <footer class="bg-dark text-white text-center py-3">
-        <p>© Dress Shop. All rights reserved.</p>
-        <p>Designed by MANIKANDAN.V</p> 
+        <p><h2>© Dribbble. All rights reserved.</h2></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
