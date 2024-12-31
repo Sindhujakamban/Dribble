@@ -158,7 +158,7 @@ Publish the website in the LocalHost.
                 <div class="card shadow gallery-item">
                     <img src="project img 1.jpg" class="card-img-top gallery-img">
                     <div class="card-body text-center">
-                        <p class="card-title">SLIPPERS</p>
+                        <p class="card-title">SHOES</p>
                         <small class="text-muted">PUMA</small>
                     </div>
                 </div>
@@ -180,7 +180,7 @@ Publish the website in the LocalHost.
 
 
 ## OUTPUT:
-![alt text](<sindhu/Dribbleapp/static/Screenshot (74).png>)
+![alt text](<sindhu/Dribbleapp/static/Screenshot (75).png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
