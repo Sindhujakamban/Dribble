@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date: 31/12/2024
+## Date: 04/01/2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
